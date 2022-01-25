@@ -1,7 +1,7 @@
-- hosts: mygroup
+- hosts: ubuntu
   tasks:
     - debug:
-        msg: "I'm in group 'mygroup'"
+        msg: "I'm in group 'ubuntu'"
 
 - hosts: onlyfoo
   tasks:
