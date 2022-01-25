@@ -1,7 +1,6 @@
 ---
 
 - name: install units for ansible-pull
-  sudo: yes
   template:
     dest: /etc/systemd/system
     src: "{{ item }}"
