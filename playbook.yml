@@ -14,6 +14,7 @@
         msg: "I'm in group 'onlybar'"
 
 - name: configure ansible-pull
+  become: yes
   hosts: all
   roles:
     - role: ansible-pull
