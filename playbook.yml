@@ -17,4 +17,4 @@
   hosts: all
   roles:
     - role: ansible-pull
-      ansible_pull_url: git@github.com:Interaze/Node-Pool.git
+      ansible_pull_url: ssh://git@github.com:Interaze/Node-Pool.git
