@@ -1,4 +1,5 @@
 - hosts: all
+  sudo: yes
   tasks:
     - name: add hosts to inventory groups
       add_host:
