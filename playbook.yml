@@ -3,10 +3,10 @@
     - debug:
         msg: "I'm in group 'ubuntu'"
 
-- hosts: onlyfoo
+- hosts: upicluster
   tasks:
     - debug:
-        msg: "I'm in group 'onlyfoo'"
+        msg: "I'm in group 'upicluster'"
 
 - hosts: onlybar
   tasks:
