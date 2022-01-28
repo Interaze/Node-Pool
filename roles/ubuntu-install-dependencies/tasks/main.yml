@@ -10,7 +10,10 @@
 - name: Install docker python package
   remote_user: ubuntu
   pip:
-    name: docker
+    name: "{{ item }}"
+  with_items:
+    - docker
+    - docker-compose
 - name: Install docker packages
   become: yes
   remote_user: ubuntu
