@@ -2,7 +2,7 @@
 
 - name: Clone a github repository
   git:
-    repo: ssh://git@github.com:Interaze/Node-Pool.git
+    repo: git@github.com:Interaze/Node-Pool.git
     dest: /home/ubuntu/
     clone: yes
     update: yes
