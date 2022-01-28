@@ -10,7 +10,7 @@
         msg: "I'm in group 'ubuntu'"
   roles:
     - role: ubuntu-install-dependencies
-    - role: ubuntu-replicate-environment
+    - role: ubuntu-replicate-source
     - role: ubuntu-run-environment
 
 - hosts: upicluster
