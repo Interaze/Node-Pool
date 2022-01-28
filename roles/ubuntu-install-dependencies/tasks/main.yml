@@ -1,6 +1,7 @@
 ---
 
 - name: Install docker python package
+  become: yes
   remote_user: ubuntu
   apt:
     name: python3-pip
