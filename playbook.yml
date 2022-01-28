@@ -1,7 +1,15 @@
+- name: configure ansible-pull
+  hosts: all
+  roles:
+    - role: ansible-pull
+      ansible_pull_url: ssh://git@github.com:Interaze/Node-Pool.git
+
 - hosts: ubuntu
   tasks:
     - debug:
-        msg: "I'm in group 'ubuntu'"
+      msg: "I'm in group 'ubuntu'"
+    - role: single-node-pull
+      ansible_pull_url: ssh://git@github.com:Interaze/Node-Pool.git
 
 - hosts: upicluster
   tasks:
@@ -13,8 +21,3 @@
     - debug:
         msg: "I'm in group 'onlybar'"
 
-- name: configure ansible-pull
-  hosts: all
-  roles:
-    - role: ansible-pull
-      ansible_pull_url: ssh://git@github.com:Interaze/Node-Pool.git
