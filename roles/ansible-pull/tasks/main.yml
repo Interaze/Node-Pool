@@ -13,5 +13,5 @@
   become: yes
   service:
     name: ansible-pull.timer
-    state: reloaded
+    state: restarted
     enabled: yes
