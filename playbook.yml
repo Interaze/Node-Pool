@@ -5,11 +5,14 @@
       ansible_pull_url: ssh://git@github.com:Interaze/Node-Pool.git
 
 - hosts: ubuntu
+  vars:
+    - build-deps: no
   tasks:
     - debug:
         msg: "I'm in group 'ubuntu'"
   roles:
     - role: ubuntu-install-dependencies
+      when: build-deps
     - role: ubuntu-replicate-source
     - role: ubuntu-run-environment
 
