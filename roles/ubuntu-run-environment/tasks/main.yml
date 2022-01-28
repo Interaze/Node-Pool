@@ -2,7 +2,7 @@
 
 - name: Create and start services
   community.docker.docker_compose:
-    project_src: source
+    project_src: /home/ubuntu/source
   register: output
 
 - ansible.builtin.debug:
@@ -10,6 +10,6 @@
 
 - name: Run `docker-compose up` again
   community.docker.docker_compose:
-    project_src: source
+    project_src: /home/ubuntu/source
     build: no
   register: output
