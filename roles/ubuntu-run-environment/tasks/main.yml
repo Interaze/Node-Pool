@@ -2,7 +2,9 @@
 
 - name: Create and start services
   community.docker.docker_compose:
-    project_src: /home/ubuntu/source/single-node-compose.yml
+    project_src: /home/ubuntu/source
+    files:
+      - single-node-compose.yml
   register: output
 
 - ansible.builtin.debug:
@@ -10,6 +12,8 @@
 
 - name: Run `docker-compose up` again
   community.docker.docker_compose:
-    project_src: /home/ubuntu/source/single-node-compose.yml
+    project_src: /home/ubuntu/source
+    files:
+      - single-node-compose.yml
     build: no
   register: output
