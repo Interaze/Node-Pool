@@ -12,5 +12,5 @@
 - name: enable ansible-pull timer
   service:
     name: ansible-pull.timer
-    state: started
+    state: reloaded
     enabled: yes
