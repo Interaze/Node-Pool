@@ -14,7 +14,7 @@
     - software-properties-common
   tags:
     - docker
-- name: Add Docker s official GPG key
+- name: Add Docker's official GPG key
   remote_user: ubuntu
   apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
