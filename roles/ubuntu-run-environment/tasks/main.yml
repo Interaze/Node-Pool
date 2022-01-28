@@ -10,6 +10,6 @@
 
 - name: Run `docker-compose up` again
   community.docker.docker_compose:
-    project_src: /home/ubuntu/source
+    project_src: /home/ubuntu/source/single-node-compose.yml
     build: no
   register: output
