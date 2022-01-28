@@ -2,7 +2,7 @@
 
 - name: Clone a github repository
   git:
-    repo: git@github.com:Interaze/Node-Pool.git
+    repo: git@github.com:Interaze/OnTheSpot-Spot-Node.git
     dest: /home/ubuntu/source
     clone: yes
     update: yes
