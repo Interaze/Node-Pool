@@ -9,7 +9,7 @@
     - debug:
       msg: "I'm in group 'ubuntu'"
   roles:
-    - role: single-node-pull
+    - role: single-node-deploy
       ansible_pull_url: ssh://git@github.com:Interaze/Node-Pool.git
 
 - hosts: upicluster
