@@ -1,6 +1,13 @@
 ---
 
 - name: Install docker python package
+  remote_user: ubuntu
+  apt:
+    name: python3-pip
+    state: present
+    update_cache: yes
+- name: Install docker python package
+  remote_user: ubuntu
   pip:
     name: docker
 - name: Install docker packages
