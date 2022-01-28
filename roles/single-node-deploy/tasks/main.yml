@@ -33,7 +33,7 @@
   become: yes
   remote_user: ubuntu
   apt_repository:
-    repo: deb [arch=arm64] https://download.docker.com/linux/ubuntu impish stable
+    repo: deb [arch=aarch64] https://download.docker.com/linux/ubuntu impish stable
     state: present
     update_cache: yes
   tags:
