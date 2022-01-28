@@ -9,8 +9,8 @@
     - debug:
         msg: "I'm in group 'ubuntu'"
   roles:
+    - role: install-ubuntu-dependencies
     - role: single-node-deploy
-      ansible_pull_url: ssh://git@github.com:Interaze/Node-Pool.git
 
 - hosts: upicluster
   tasks:
