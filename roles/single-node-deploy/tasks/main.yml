@@ -30,6 +30,7 @@
   tags:
     - docker
 - name: Set up the stable repository
+  become: yes
   remote_user: ubuntu
   apt_repository:
     repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable
