@@ -39,6 +39,7 @@
   tags:
     - docker
 - name: Update apt packages
+  become: yes
   remote_user: ubuntu
   apt:
     update_cache: yes
