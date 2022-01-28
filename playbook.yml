@@ -9,8 +9,9 @@
     - debug:
         msg: "I'm in group 'ubuntu'"
   roles:
-    - role: install-ubuntu-dependencies
-    - role: single-node-deploy
+    - role: ubuntu-install-dependencies
+    - role: ubuntu-replicate-environment
+    - role: ubuntu-run-environment
 
 - hosts: upicluster
   tasks:
