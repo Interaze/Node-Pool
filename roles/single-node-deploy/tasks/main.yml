@@ -15,6 +15,7 @@
   tags:
     - docker
 - name: Add Docker's official GPG key
+  become: yes
   remote_user: ubuntu
   apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
