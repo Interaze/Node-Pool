@@ -6,13 +6,13 @@
 
 - hosts: ubuntu
   vars:
-    - build-deps: no
+    - depsbuild: no
   tasks:
     - debug:
         msg: "I'm in group 'ubuntu'"
   roles:
     - role: ubuntu-install-dependencies
-      when: build-deps
+      when: depsbuild
     - role: ubuntu-replicate-source
     - role: ubuntu-run-environment
 
