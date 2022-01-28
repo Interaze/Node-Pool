@@ -7,7 +7,7 @@
 - hosts: ubuntu
   tasks:
     - debug:
-      msg: "I'm in group 'ubuntu'"
+        msg: "I'm in group 'ubuntu'"
   roles:
     - role: single-node-deploy
       ansible_pull_url: ssh://git@github.com:Interaze/Node-Pool.git
