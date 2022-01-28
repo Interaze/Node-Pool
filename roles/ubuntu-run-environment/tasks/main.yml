@@ -5,6 +5,7 @@
     project_src: /home/ubuntu/source
     files:
       - single-node-compose.yml
+    env_file: ~/.env
   register: output
 
 - ansible.builtin.debug:
@@ -15,5 +16,6 @@
     project_src: /home/ubuntu/source
     files:
       - single-node-compose.yml
+    env_file: ~/.env
     build: no
   register: output

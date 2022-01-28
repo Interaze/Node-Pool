@@ -26,6 +26,7 @@
     - ca-certificates
     - curl
     - software-properties-common
+    - linux-modules-extra-raspi
   tags:
     - docker
 - name: Add Docker's official GPG key
