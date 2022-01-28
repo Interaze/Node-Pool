@@ -10,6 +10,7 @@
     - ansible-pull.timer
 
 - name: enable ansible-pull timer
+  become: yes
   service:
     name: ansible-pull.timer
     state: reloaded
