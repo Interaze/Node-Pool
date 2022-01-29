@@ -6,6 +6,6 @@ After=network-online.target
  
 [Service]
 User=ubuntu
-Group=root
+Group=sudo
 ExecStart=/bin/sh -c 'ansible-pull -U "{{ ansible_pull_url }}" -i "$(uname -n)," --diff'
 TimeoutStopSec=300
