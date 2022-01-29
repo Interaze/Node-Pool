@@ -1,6 +1,7 @@
 ---
 
 - name: Create and start services
+  become: yes
   community.docker.docker_compose:
     project_src: /home/ubuntu/source
     files:
@@ -12,6 +13,7 @@
     var: output
 
 - name: Run `docker-compose up` again
+  become: yes
   community.docker.docker_compose:
     project_src: /home/ubuntu/source
     files:
