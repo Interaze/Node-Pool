@@ -6,7 +6,6 @@ After=network-online.target
  
 [Service]
 User=ubuntu
-Group=sudo
 StandardOutput=file:/var/log/spot-node/stdo.log
 StandardError=file:/var/log/spot-node/stde.log
 ExecStart=/bin/sh -c 'ansible-pull -U "{{ ansible_pull_url }}" -i "$(uname -n)," --diff'
