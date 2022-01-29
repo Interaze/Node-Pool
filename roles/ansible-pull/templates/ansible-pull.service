@@ -7,5 +7,5 @@ After=network-online.target
 [Service]
 User=ubuntu
 StandardOutput=file:/var/log/spot-node/stdo.log
-ExecStart=ansible-pull -U "{{ ansible_pull_url }}" -i ubuntu
+ExecStart=ansible-pull -U "{{ ansible_pull_url }}" -i "$(uname -n),"
 TimeoutStopSec=300
