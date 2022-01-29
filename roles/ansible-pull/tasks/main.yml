@@ -13,6 +13,6 @@
   become: yes
   service:
     name: ansible-pull.timer
-    state: start
+    state: started
     daemon_reload: yes
     enabled: yes
