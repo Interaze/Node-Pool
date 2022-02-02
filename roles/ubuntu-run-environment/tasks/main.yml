@@ -7,7 +7,6 @@
     files:
       - single-node-compose.yml
     env_file: ~/.env
-    build: yes
   register: output
 
 - ansible.builtin.debug:
