@@ -55,3 +55,5 @@ elif args.list:
     }))
 else:
     raise NotImplementedError()
+
+print(ansible_hosts)
