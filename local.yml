@@ -6,6 +6,6 @@
         groups: "{{ hostvars[groups].pull_groups }}"
       changed_when: False
     - debug:
-      msg: "I'm {{ groups }}"
+        msg: "I'm {{ groups }}"
 
 - import_playbook: playbook.yml
