@@ -2,8 +2,8 @@
   tasks:
     - name: add hosts to inventory groups
       add_host:
-        name: "{{ variable_host }}"
-        groups: "{{ hostvars[variable_host].pull_groups }}"
+        name: "{{ inventory_host }}"
+        groups: "{{ hostvars[inventory_host].pull_groups }}"
       changed_when: False
     - debug:
         msg: "I'm {{ groups }}"
