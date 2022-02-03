@@ -22,7 +22,7 @@ ansible_hosts = {}
 for entry in os.scandir(host_vars):
     if entry.name.endswith('.yml'):
         host = entry.name[:-4]
-
+        print("test")
         yml = {}
         with open(entry.path, 'r') as stream:
             yml = yaml.safe_load(stream)
