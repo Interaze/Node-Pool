@@ -7,5 +7,7 @@
       changed_when: False
       environment:
         - groups: default
+    - debug:
+      msg: "I'm {{ groups }}"
 
 - import_playbook: playbook.yml
