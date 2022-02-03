@@ -1,11 +1,2 @@
-- hosts: localhost
-  tasks:
-    - name: add hosts to inventory groups
-      add_host:
-        name: "{{ inventory_host }}"
-        groups: "{{ hostvars[inventory_host].pull_groups }}"
-      changed_when: False
-    - debug:
-        msg: "I'm {{ groups }}"
 
 - import_playbook: playbook.yml
