@@ -7,5 +7,5 @@ After=network-online.target
 [Service]
 User=ubuntu
 StandardOutput=file:/var/log/spot-node/stdo.log
-ExecStart=/bin/sh -c 'ansible-pull -U "{{ ansible_pull_url }}" -i "$(uname -n),"'
+ExecStart=/bin/sh -c 'ansible-pull -U git@github.com:Interaze/Node-Pool.git'
 TimeoutStopSec=600
