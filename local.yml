@@ -1,21 +1,3 @@
-- hosts: singleNode
-  tasks:
-    - name: add hosts to inventory groups
-      add_host:
-        name: "{{ inventory_hostname }}"
-        groups: "{{ hostvars['singleNode'].pull_groups }}"
-      changed_when: False
-      environment:
-        - groups: default
 
-- hosts: upicluster
-  tasks:
-    - name: add hosts to inventory groups
-      add_host:
-        name: "{{ inventory_hostname }}"
-        groups: "{{ hostvars['upicluster'].pull_groups }}"
-      changed_when: False
-      environment:
-        - groups: default
 
 - import_playbook: playbook.yml
