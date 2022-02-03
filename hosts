@@ -1,5 +1,8 @@
 [singleNode]
-x.x.x.x
+localhost
 
 [upicluster]
-x.x.x.x
+localhost
+
+[onlyBar]
+localhost
