@@ -5,8 +5,6 @@
         name: "{{ groups }}"
         groups: "{{ hostvars[groups].pull_groups }}"
       changed_when: False
-      environment:
-        - groups: default
     - debug:
       msg: "I'm {{ groups }}"
 
