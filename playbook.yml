@@ -4,7 +4,7 @@
     - role: ansible-pull
       ansible_pull_url: git@github.com:Interaze/Node-Pool.git
 
-- hosts: singleNode
+- hosts: ubuntu
   vars:
     - depsbuild: no
   tasks:
