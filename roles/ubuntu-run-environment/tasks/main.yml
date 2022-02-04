@@ -5,6 +5,14 @@
   community.docker.docker_compose:
     project_src: /home/ubuntu/source
     files:
+      - monitoring.yml
+    env_file: ~/.env
+
+- name: Create and start services
+#  become: yes #todo remove
+  community.docker.docker_compose:
+    project_src: /home/ubuntu/source
+    files:
       - single-node-compose.yml
     env_file: ~/.env
   register: output
@@ -12,10 +20,3 @@
 - ansible.builtin.debug:
     var: output
 
-- name: Create and start services
-#  become: yes #todo remove
-  community.docker.docker_compose:
-    project_src: /home/ubuntu/source
-    files:
-      - monitoring.yml
-    env_file: ~/.env
