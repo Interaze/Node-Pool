@@ -3,6 +3,9 @@
   roles:
     - role: ansible-pull
       ansible_pull_url: git@github.com:Interaze/Node-Pool.git
+      ansible_pull_timer: |
+        OnBootSec=5m
+        OnCalendar=*:0/15
 
 - hosts: singleNode
   vars:
