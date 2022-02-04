@@ -48,7 +48,7 @@
   become: yes
   remote_user: ubuntu
   apt_repository:
-    repo: deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable
+    repo: deb https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable
     state: present
     update_cache: yes
   tags:
