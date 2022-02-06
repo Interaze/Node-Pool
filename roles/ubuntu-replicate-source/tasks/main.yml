@@ -6,4 +6,3 @@
     dest: /home/ubuntu/source
     clone: yes
     update: yes
-    force: yes
